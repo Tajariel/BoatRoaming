@@ -123,106 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &386298930
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 386298931}
-  - component: {fileID: 386298932}
-  m_Layer: 0
-  m_Name: Floater (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &386298931
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 386298930}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: -0.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1885625646}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &386298932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 386298930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd5b2fc7d08a98d488e6bb51e88642c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rigidbody: {fileID: 1885625642}
-  depthBeforeSubmerged: 1
-  displacementAmount: 3
-  floaterCount: 6
-  waterDrag: 2
-  waterAngularDrag: 2
---- !u!1 &468432351
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 468432352}
-  - component: {fileID: 468432353}
-  m_Layer: 0
-  m_Name: Floater (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &468432352
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 468432351}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: -0.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1885625646}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &468432353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 468432351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd5b2fc7d08a98d488e6bb51e88642c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rigidbody: {fileID: 1885625642}
-  depthBeforeSubmerged: 1
-  displacementAmount: 3
-  floaterCount: 6
-  waterDrag: 2
-  waterAngularDrag: 2
 --- !u!1 &799317156
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,7 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 1885625642}
   depthBeforeSubmerged: 1
-  displacementAmount: 3
+  displacementAmount: 1
   floaterCount: 6
   waterDrag: 2
   waterAngularDrag: 2
@@ -529,7 +429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 1885625642}
   depthBeforeSubmerged: 1
-  displacementAmount: 3
+  displacementAmount: 1
   floaterCount: 6
   waterDrag: 2
   waterAngularDrag: 2
@@ -731,7 +631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 1885625642}
   depthBeforeSubmerged: 1
-  displacementAmount: 3
+  displacementAmount: 1
   floaterCount: 6
   waterDrag: 2
   waterAngularDrag: 2
@@ -781,7 +681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 1885625642}
   depthBeforeSubmerged: 1
-  displacementAmount: 3
+  displacementAmount: 1
   floaterCount: 6
   waterDrag: 2
   waterAngularDrag: 2
@@ -882,8 +782,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a601d39b80eb84498b6d0be358fb275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 0.5
-  length: 4
+  amplitude: 1
+  length: 2
   speed: 1
   offset: 0
 --- !u!114 &1806184348
@@ -940,7 +840,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -1032,8 +932,6 @@ Transform:
   - {fileID: 1639705527}
   - {fileID: 1701490269}
   - {fileID: 1157438028}
-  - {fileID: 468432352}
-  - {fileID: 386298931}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
