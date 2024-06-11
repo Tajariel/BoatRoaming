@@ -5,10 +5,11 @@ using UnityEngine;
 public class BoatController : MonoBehaviour
 {
     public Rigidbody rb;
-    public float maxSpeed = 1;
-    public float accel = 1;
-    public float rotationSpeed = 1;
-    public float rotaAccel = 1;
+    public float maxSpeed = 10;
+    private float currentSpeed = 0;
+    public float accel = 10;
+    public float rotationSpeed = 0.5f;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -20,9 +21,8 @@ public class BoatController : MonoBehaviour
     void Update()
     {
         if(Input.GetButton("Jump")){
-            float speedDif = maxSpeed - rb.velocity.x;
-            float movement = speedDif * accel;
-            rb.AddForce(movement*transform.forward, ForceMode.Force);
+            currentSpeed = (currentSpeed+accel)*Time.deltaTime;
+            rb.AddForce(maxSpeed*transform.right, ForceMode.Force);            
         }
         if(Input.GetButton("Horizontal")){
             float turn = Input.GetAxis("Horizontal");

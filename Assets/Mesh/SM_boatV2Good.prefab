@@ -112,6 +112,7 @@ GameObject:
   - component: {fileID: 1023825939421831310}
   - component: {fileID: 6663621531276240873}
   - component: {fileID: 2657321890515622653}
+  - component: {fileID: 5377589608212086941}
   m_Layer: 0
   m_Name: SM_boatV2Good
   m_TagString: Untagged
@@ -217,6 +218,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5377589608212086941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561988864722591396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f06c10a418243e4893e47c5da0503ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 2657321890515622653}
+  maxSpeed: 2
+  accel: 10
+  rotationSpeed: 1
 --- !u!1 &2841918984228350768
 GameObject:
   m_ObjectHideFlags: 0
