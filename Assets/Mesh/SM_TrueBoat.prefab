@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6285275305234518395}
   - component: {fileID: 6175331706504222435}
   - component: {fileID: 5940944271801240868}
+  - component: {fileID: 4611843712999985141}
   m_Layer: 0
   m_Name: SM_TrueBoat
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 828541654545705902}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
@@ -37,7 +38,7 @@ Transform:
   - {fileID: 5167640789618608901}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 90, z: 0}
 --- !u!33 &6285275305234518395
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -117,6 +118,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4611843712999985141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828541654545705902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f06c10a418243e4893e47c5da0503ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 5940944271801240868}
+  maxSpeed: 100
+  accel: 0.1
+  rotationSpeed: 10
+  rotaAccel: 1
 --- !u!1 &1928580268521972582
 GameObject:
   m_ObjectHideFlags: 0
